@@ -8,13 +8,32 @@
 import SwiftUI
 
 struct PadDockTabView: View {
+    
+    @ObservedObject var stemPlayer: StemPlayer
+    let columns = [GridItem(.flexible()), GridItem(.flexible())]
+    var screen = UIScreen.main.bounds
+
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+        VStack{
+        if stemPlayer.hasPads {
+            LazyVGrid(columns: columns) {
+                ForEach(stemPlayer.tracks) { track in
+                    PadView(stemPlayer: stemPlayer, track: track)
+                }
+            }.frame(width: screen.width - 20)
+
+        } else {Text("No Pads")}
+        
+//            SFXButtonView(buttonAction: return, buttonLabel: "SFX1")
+            
+        }
     }
 }
 
 struct PadDockTabView_Previews: PreviewProvider {
     static var previews: some View {
-        PadDockTabView()
+        PadDockTabView(stemPlayer: StemPlayer(songs: [Songs.all[0]]))
     }
 }

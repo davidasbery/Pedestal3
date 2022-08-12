@@ -9,14 +9,15 @@ import Foundation
 import AVFoundation
 
 extension Array where Element == AVAudioPlayer {
-    func playInSync(delay: TimeInterval? = nil) {
+    func playInSync(currentTime: Double, delay: TimeInterval? = nil) {
+        pause()
         guard let first = first else { return }
         if count == 1 {
             first.play()
             return
         }
-        let currentTime = first.currentTime
-        let startTime = startTime(delay: delay)
+//        let currentTime = first.currentTime
+        let startTime = first.deviceCurrentTime
         forEach { audioPlayer in
             audioPlayer.currentTime = currentTime
             audioPlayer.play(atTime: startTime)
@@ -28,7 +29,7 @@ extension Array where Element == AVAudioPlayer {
         if let delay = delay {
             return first.deviceCurrentTime + delay
         } else {
-            return first.deviceCurrentTime + Double(count)*0.02
+            return first.deviceCurrentTime + Double(count)*0.0
         }
     }
     

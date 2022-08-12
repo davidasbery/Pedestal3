@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90187C1289EFB5000EE99A8 /* WuTangDL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187BD289EFB5000EE99A8 /* WuTangDL.mp3 */; };
+		A90187C2289EFB5000EE99A8 /* WuTangD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187BE289EFB5000EE99A8 /* WuTangD.mp3 */; };
+		A90187C3289EFB5000EE99A8 /* WuTangM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187BF289EFB5000EE99A8 /* WuTangM.mp3 */; };
+		A90187C4289EFB5000EE99A8 /* WuTangB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187C0289EFB5000EE99A8 /* WuTangB.mp3 */; };
+		A90187C6289F346B00EE99A8 /* Menu1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90187C5289F346B00EE99A8 /* Menu1View.swift */; };
+		A90187C8289F6A5F00EE99A8 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90187C7289F6A5F00EE99A8 /* GifImage.swift */; };
+		A90187CC289F6AC900EE99A8 /* Decrease.gif in Resources */ = {isa = PBXBuildFile; fileRef = A90187CA289F6AC900EE99A8 /* Decrease.gif */; };
+		A90187CD289F6AC900EE99A8 /* Jumping.gif in Resources */ = {isa = PBXBuildFile; fileRef = A90187CB289F6AC900EE99A8 /* Jumping.gif */; };
+		A90187CF289F8E3800EE99A8 /* SFXButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90187CE289F8E3800EE99A8 /* SFXButtonView.swift */; };
+		A9135A7E288E6510001BD92B /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9135A7D288E6510001BD92B /* ArtworkView.swift */; };
+		A9B88155289B30350074569F /* DockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B88154289B30350074569F /* DockView.swift */; };
+		A9B88159289B33860074569F /* ClearDockTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B88158289B33860074569F /* ClearDockTabView.swift */; };
+		A9B8815B289B491A0074569F /* PadDockTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B8815A289B491A0074569F /* PadDockTabView.swift */; };
 		DB136D902879D58300C4F636 /* StemPlayerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D8F2879D58300C4F636 /* StemPlayerApp.swift */; };
 		DB136D922879D58300C4F636 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB136D912879D58300C4F636 /* PlayerView.swift */; };
 		DB136D942879D58400C4F636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB136D932879D58400C4F636 /* Assets.xcassets */; };
@@ -32,6 +45,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A90187B4289EE6EA00EE99A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A90187BD289EFB5000EE99A8 /* WuTangDL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WuTangDL.mp3; sourceTree = "<group>"; };
+		A90187BE289EFB5000EE99A8 /* WuTangD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WuTangD.mp3; sourceTree = "<group>"; };
+		A90187BF289EFB5000EE99A8 /* WuTangM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WuTangM.mp3; sourceTree = "<group>"; };
+		A90187C0289EFB5000EE99A8 /* WuTangB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WuTangB.mp3; sourceTree = "<group>"; };
+		A90187C5289F346B00EE99A8 /* Menu1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu1View.swift; sourceTree = "<group>"; };
+		A90187C7289F6A5F00EE99A8 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
+		A90187CA289F6AC900EE99A8 /* Decrease.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Decrease.gif; sourceTree = SOURCE_ROOT; };
+		A90187CB289F6AC900EE99A8 /* Jumping.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Jumping.gif; sourceTree = SOURCE_ROOT; };
+		A90187CE289F8E3800EE99A8 /* SFXButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFXButtonView.swift; sourceTree = "<group>"; };
+		A9135A7D288E6510001BD92B /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
+		A9B88154289B30350074569F /* DockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockView.swift; sourceTree = "<group>"; };
+		A9B88158289B33860074569F /* ClearDockTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearDockTabView.swift; sourceTree = "<group>"; };
+		A9B8815A289B491A0074569F /* PadDockTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadDockTabView.swift; sourceTree = "<group>"; };
 		DB136D8C2879D58300C4F636 /* StemPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StemPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB136D8F2879D58300C4F636 /* StemPlayerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StemPlayerApp.swift; sourceTree = "<group>"; };
 		DB136D912879D58300C4F636 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
@@ -68,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A90187C9289F6A6B00EE99A8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A90187C7289F6A5F00EE99A8 /* GifImage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DB136D832879D58300C4F636 = {
 			isa = PBXGroup;
 			children = (
@@ -87,13 +122,17 @@
 		DB136D8E2879D58300C4F636 /* StemPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				A90187B4289EE6EA00EE99A8 /* Info.plist */,
 				DB136D8F2879D58300C4F636 /* StemPlayerApp.swift */,
 				DB6AD09A287A0BD1004168DE /* StemPlayer.swift */,
+				A90187C9289F6A6B00EE99A8 /* Helpers */,
 				DB246D55287B680900D00B19 /* Views */,
 				DB246D54287B680300D00B19 /* Models */,
 				DB246D3F287B553E00D00B19 /* Extensions */,
 				DB246D56287B682800D00B19 /* AudioFiles */,
 				DB136D932879D58400C4F636 /* Assets.xcassets */,
+				A90187CA289F6AC900EE99A8 /* Decrease.gif */,
+				A90187CB289F6AC900EE99A8 /* Jumping.gif */,
 				DB136D952879D58400C4F636 /* Preview Content */,
 			);
 			path = StemPlayer;
@@ -134,8 +173,14 @@
 			isa = PBXGroup;
 			children = (
 				DB136D912879D58300C4F636 /* PlayerView.swift */,
+				A9B88154289B30350074569F /* DockView.swift */,
+				A9B88158289B33860074569F /* ClearDockTabView.swift */,
+				A9B8815A289B491A0074569F /* PadDockTabView.swift */,
+				A9135A7D288E6510001BD92B /* ArtworkView.swift */,
 				DB246D52287B5BF300D00B19 /* ListView.swift */,
 				DBEE1DA62888852500E76BEB /* PadView.swift */,
+				A90187C5289F346B00EE99A8 /* Menu1View.swift */,
+				A90187CE289F8E3800EE99A8 /* SFXButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +193,10 @@
 				DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */,
 				DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */,
 				DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */,
+				A90187C0289EFB5000EE99A8 /* WuTangB.mp3 */,
+				A90187BE289EFB5000EE99A8 /* WuTangD.mp3 */,
+				A90187BD289EFB5000EE99A8 /* WuTangDL.mp3 */,
+				A90187BF289EFB5000EE99A8 /* WuTangM.mp3 */,
 			);
 			path = AudioFiles;
 			sourceTree = "<group>";
@@ -216,13 +265,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90187C1289EFB5000EE99A8 /* WuTangDL.mp3 in Resources */,
+				A90187C2289EFB5000EE99A8 /* WuTangD.mp3 in Resources */,
 				DB246D4E287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav in Resources */,
+				A90187CD289F6AC900EE99A8 /* Jumping.gif in Resources */,
 				DB136D972879D58400C4F636 /* Preview Assets.xcassets in Resources */,
+				A90187CC289F6AC900EE99A8 /* Decrease.gif in Resources */,
+				A90187C3289EFB5000EE99A8 /* WuTangM.mp3 in Resources */,
 				DB246D4F287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav in Resources */,
 				DB246D51287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav in Resources */,
 				DB136D942879D58400C4F636 /* Assets.xcassets in Resources */,
 				DB246D50287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav in Resources */,
 				DB246D4D287B59AA00D00B19 /* 00_HolyHolyHoly.wav in Resources */,
+				A90187C4289EFB5000EE99A8 /* WuTangB.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,18 +289,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB246D47287B55E900D00B19 /* AVAudioPlayer+Extension.swift in Sources */,
+				A90187C6289F346B00EE99A8 /* Menu1View.swift in Sources */,
 				DB246D58287B689400D00B19 /* Shape+Extension.swift in Sources */,
 				DB6AD0A3287A0C70004168DE /* Song.swift in Sources */,
 				DB6AD09F287A0C22004168DE /* PadType.swift in Sources */,
 				DB246D45287B55C800D00B19 /* Double+Extension.swift in Sources */,
+				A9B88155289B30350074569F /* DockView.swift in Sources */,
+				A9B88159289B33860074569F /* ClearDockTabView.swift in Sources */,
+				A9B8815B289B491A0074569F /* PadDockTabView.swift in Sources */,
 				DB246D43287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift in Sources */,
+				A9135A7E288E6510001BD92B /* ArtworkView.swift in Sources */,
 				DB136D922879D58300C4F636 /* PlayerView.swift in Sources */,
 				DB136D902879D58300C4F636 /* StemPlayerApp.swift in Sources */,
 				DB6AD09B287A0BD1004168DE /* StemPlayer.swift in Sources */,
+				A90187C8289F6A5F00EE99A8 /* GifImage.swift in Sources */,
 				DB246D53287B5BF300D00B19 /* ListView.swift in Sources */,
 				DB246D41287B555D00D00B19 /* TrackArray+Extension.swift in Sources */,
 				DB6AD09D287A0C04004168DE /* Track.swift in Sources */,
 				DBEE1DA72888852500E76BEB /* PadView.swift in Sources */,
+				A90187CF289F8E3800EE99A8 /* SFXButtonView.swift in Sources */,
 				DB246D5A287B69E100D00B19 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -357,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -375,14 +437,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StemPlayer/Preview Content\"";
-				DEVELOPMENT_TEAM = QA67695N79;
+				DEVELOPMENT_TEAM = AKR5CV9H8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StemPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +456,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -404,14 +468,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StemPlayer/Preview Content\"";
-				DEVELOPMENT_TEAM = QA67695N79;
+				DEVELOPMENT_TEAM = AKR5CV9H8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StemPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,7 +487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

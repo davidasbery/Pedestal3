@@ -19,15 +19,26 @@ struct ListView: View {
                     HStack {
                         Text(song.name)
                         Spacer()
+                        
                         if shouldShowIsPlayingIcon(for: song) {
                             Image(systemName: "speaker.wave.3.fill")
                                 .foregroundColor(.gray)
                         }
+                        
+                        Button {
+                            stemPlayer.onToggle(song: song )
+                            
+                        } label: {
+                            Image(song.on ? "toggleOff" : "toggleOn")
+                        }
+
                     }
+                    .buttonStyle(.plain)
                     .frame(maxWidth: .infinity)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         stemPlayer.play(song: song)
+                        
                     }
                 }
             }

@@ -14,8 +14,14 @@ struct PadView: View {
     
     var body: some View {
         ZStack {
+            
+            
+            Image("PadTexture")
+                .resizable()
+                .aspectRatio(1, contentMode: .fit)
+            Text(track.isMuted ? "M" : (track.isSoloed ? "S" : "")).font(.system(size: 90).bold())
+                .foregroundColor(.gray)
             padType
-            Text(track.isMuted ? "M" : (track.isSoloed ? "S" : "")).font(.system(size: 80))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .aspectRatio(1, contentMode: .fit)
@@ -28,16 +34,17 @@ struct PadView: View {
                 stemPlayer.solo(padType: track.padType)
             }
         )
-        .background(track.audioPlayer.isMuted ? .white : .orange)
-        .overlay(RoundedRectangle(cornerRadius: 16).stroke(.orange, lineWidth: 2))
-        .cornerRadius(16)
-        .padding()
+        .background(.black)
+        .overlay(Rectangle().stroke(Color.lightGray, lineWidth: 5))
+        .padding(3)
     }
     
     var padType: some View {
         VStack {
             HStack {
                 Text(track.padType?.displayName ?? "")
+                    .foregroundColor(.white)
+                    .font(.system(size: 15).bold())
                 Spacer()
             }
             Spacer()

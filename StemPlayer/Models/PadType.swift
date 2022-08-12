@@ -8,7 +8,7 @@
 import Foundation
 
 enum PadType {
-    case soprano, alto, tenor, bass
+    case soprano, alto, tenor, bass, melody, vocal, drum, loop
     
     var displayName: String {
         switch self {
@@ -16,6 +16,10 @@ enum PadType {
         case .alto: return "Alto"
         case .tenor: return "Tenor"
         case .bass: return "Bass"
+        case .melody: return "Melody"
+        case .vocal: return "Vocal"
+        case .drum: return "Drum"
+        case .loop: return "Loop"
         }
     }
 }

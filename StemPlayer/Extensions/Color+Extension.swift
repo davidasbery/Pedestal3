@@ -10,10 +10,10 @@ import SwiftUI
 
 extension Color {
     static var lightGray: Color {
-        return gray(240)
+        return Color(red: 0.766, green: 0.606, blue: 0.422)
     }
     
     static func gray(_ value: Double) -> Color {
-        return Color(red: value/255, green: value/255, blue: value/255, opacity: 1)
+        return Color.white
     }
 }

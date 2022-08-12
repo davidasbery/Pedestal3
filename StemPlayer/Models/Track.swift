@@ -12,7 +12,7 @@ class Track: Identifiable {
     let id: UUID = UUID()
     let fileName: String
     let padType: PadType?
-    let ext: String = "wav"
+    let ext: String = "mp3"
     let audioPlayer: AVAudioPlayer
     var isMuted: Bool = false {
         didSet {

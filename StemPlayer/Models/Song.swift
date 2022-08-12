@@ -10,12 +10,17 @@ import Foundation
 class Song: Identifiable, Equatable {
     let id: UUID = UUID()
     let name: String
+    let artistName: String
     let tracks: [Track]
+    var on = true
     
     init(name: String,
-         tracks: [Track?]) {
+         tracks: [Track?],
+         artistName:String = "DAMMXIII") {
         self.name = name
+        self.artistName = artistName
         self.tracks = tracks.compactMap { $0 }
+        
     }
     
     static func == (lhs: Song, rhs: Song) -> Bool {
@@ -26,37 +31,33 @@ class Song: Identifiable, Equatable {
 struct Songs {
     static var all: [Song] {
         return [
-            Song(name: "Holy, Holy, Holy",
-                 tracks: [
-                    Track(fileName: "00_HolyHolyHoly")
-                 ]
-            ),
-            Song(name: "Holy, Holy, Holy - 1 Part",
+            
+            Song(name: "WuTang 1",
                 tracks: [
-                    Track(fileName: "01_HolyHolyHolySoprano", padType: .soprano)
+                    Track(fileName: "WuTangM", padType: .melody)
                 ]
             ),
-
-            Song(name: "Holy, Holy, Holy - 2 Parts",
+            Song(name: "WuTang 2",
                 tracks: [
-                    Track(fileName: "01_HolyHolyHolySoprano", padType: .soprano),
-                    Track(fileName: "02_HolyHolyHolyAlto", padType: .alto)
+                    Track(fileName: "WuTangB", padType: .bass),
+                    Track(fileName: "WuTangM", padType: .melody)
                 ]
             ),
-            Song(name: "Holy, Holy, Holy - 3 Parts",
+            Song(name: "WuTang 3",
                 tracks: [
-                    Track(fileName: "01_HolyHolyHolySoprano", padType: .soprano),
-                    Track(fileName: "02_HolyHolyHolyAlto", padType: .alto),
-                    Track(fileName: "03_HolyHolyHolyTenor", padType: .tenor)
+                    Track(fileName: "WuTangB", padType: .bass),
+                    Track(fileName: "WuTangD", padType: .drum),
+                    Track(fileName: "WuTangM", padType: .melody)
                 ]
             ),
-            Song(name: "Holy, Holy, Holy - 4 Parts",
+            Song(name: "WuTang 4",
                 tracks: [
-                    Track(fileName: "01_HolyHolyHolySoprano", padType: .soprano),
-                    Track(fileName: "02_HolyHolyHolyAlto", padType: .alto),
-                    Track(fileName: "03_HolyHolyHolyTenor", padType: .tenor),
-                    Track(fileName: "04_HolyHolyHolyBass", padType: .bass)
+                    Track(fileName: "WuTangB", padType: .bass),
+                    Track(fileName: "WuTangD", padType: .drum),
+                    Track(fileName: "WuTangM", padType: .melody),
+                    Track(fileName: "WuTangDL", padType: .loop)
                 ]
+            
             )
         ]
     }

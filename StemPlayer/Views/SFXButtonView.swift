@@ -7,14 +7,37 @@
 
 import SwiftUI
 
-struct SFXView: View {
+struct SFXButtonView: View {
+    
+    var buttonAction: () -> Void
+    var buttonLabel: String
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        
+        Button(action: {
+            
+            buttonAction()
+            
+            print("clear")
+            
+        }, label: {
+            HStack{
+                Spacer()
+                
+                Text(buttonLabel)
+                    .font(.custom("Helvetica Neue Condensed Bold", size: 18))
+                Spacer()
+            }
+        
+            .padding(.vertical, 10)
+            .foregroundColor(.white)
+            .background(.black)
+            .border(Color(red: 0.766, green: 0.606, blue: 0.422), width: 3)
 
-struct SFXView_Previews: PreviewProvider {
-    static var previews: some View {
-        SFXView()
+            
+        })
+        
+        
     }
 }

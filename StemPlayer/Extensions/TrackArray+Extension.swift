@@ -17,8 +17,8 @@ extension Array where Element == Track {
         return map { $0.audioPlayer }
     }
     
-    func playInSync(delay: TimeInterval? = nil) {
-        audioPlayers.playInSync(delay: delay)
+    func playInSync(currentTime:Double, delay: TimeInterval? = nil) {
+        audioPlayers.playInSync(currentTime: currentTime, delay: delay)
     }
     
     func pause() {

@@ -10,9 +10,14 @@ import SwiftUI
 import AVFoundation
 
 class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
-    let songs: [Song]
+    @Published var songs: [Song]
     @Published var tracks: [Track] = []
     @Published var isPlaying: Bool = false
+    
+    @Published var replayButtonMode: ReplayButtonMode = .off
+    @Published var shuffleOn = false
+    var buttonIndex = 0
+    
     @Published var currentTime: Double = 0 {
         didSet {
             currentTimeString = tracks.referenceAudioPlayer?.currentTime.timeString ?? "-:--"
@@ -51,15 +56,36 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         setupNewSong()
         updateTimes()
         let _ = self.timer.connect()
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback)  //Play music in silent mode
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: []) // Play music in background mode Part I
+            try AVAudioSession.sharedInstance().setActive(true) // Play music in background mode Part II
+        }
+        catch let error {
+            print("Error \(error.localizedDescription)")
+        }
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        isPlaying = false
-        playNextSong()
+        switch replayButtonMode {
+        case .off:
+            if replayButtonMode == .off && index == songs.count - 1 {
+            index = 0
+            pauseSongFromStart()
+            }else{
+                playNextSong()
+            }
+        case .single:
+            playSongFromStart()
+            shuffleOn = false
+        case .all:
+               playNextSong()
+        }
     }
     
     func play() {
-        tracks.playInSync()
+        tracks.playInSync(currentTime: tracks.referenceAudioPlayer?.currentTime ?? 0)
         isPlaying = true
     }
     
@@ -71,29 +97,72 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     }
     
     func playNextSong() {
-        pause()
-        if index < songs.count - 1 {
-            index += 1
-        } else {
-            index = 0
+        if isPlaying == false {
+            pause()
+            if index < songs.count - 1 {
+                if shuffleOn == false{ index += 1} else {index = getRandomIndex()}
+                pauseSongFromStart()
+            } else {
+                if shuffleOn == false{ index = 0} else {index = getRandomIndex()}
+                pauseSongFromStart()
+            }
+            
+        } else{
+                pause()
+                if index < songs.count - 1 {
+                    if shuffleOn == false{ index += 1} else {index = getRandomIndex()
+                    }
+                    playSongFromStart()
+                } else {
+                    if shuffleOn == false{ index = 0} else {index = getRandomIndex()
+                    }
+                    playSongFromStart()
+            }
         }
-        playSongFromStart()
     }
     
     func playPreviousSong() {
+       
+        if isPlaying == false {
+        if currentTime >= 1.0 {
+        pause()
+        pauseSongFromStart()
+        } else{
         pause()
         if index > 0 {
             index -= 1
         } else {
-            index = songs.count - 1
-        }
+            index = 0
+            //songs.count - 1
+          }
+                     pauseSongFromStart()
+          }
+        } else {
+        if currentTime >= 1.0 {
+        pause()
         playSongFromStart()
+        } else{
+        pause()
+        if index > 0 {
+            index -= 1
+        } else {
+            index = 0
+            //songs.count - 1
+          }
+                     playSongFromStart()
+          }
+            }
     }
-    
     func playSongFromStart() {
         setupNewSong()
         seek(to: 0)
         play()
+    }
+    func pauseSongFromStart() {
+        pause()
+        setupNewSong()
+        seek(to: 0)
+        
     }
     
     func pause() {
@@ -130,15 +199,22 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         self.tracks.referenceAudioPlayer?.delegate = self
     }
     
+    func onToggle(song: Song) {
+        guard let songIndex = songs.firstIndex(where: { $0.id == song.id }) else { return }
+        songs[songIndex].on.toggle()
+        self.songs = songs
+    }
+    
     func seek(to time: Double) {
-        tracks.pause()
+//        tracks.pause()
         tracks.referenceAudioPlayer?.currentTime = time
         updateTimes()
         if isPlaying {
-            tracks.playInSync()
+            tracks.playInSync(currentTime:time)
         }
     }
     
+    // Where does this get used?
     func skip(seconds: Double) {
         let newTime = currentTime + seconds
         seek(to: newTime <= currentTotalTime ? newTime : currentTotalTime)
@@ -149,4 +225,58 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         currentTime = tracks.referenceAudioPlayer?.currentTime ?? 0
         currentTotalTime = tracks.referenceAudioPlayer?.duration ?? 0
     }
+    
+    func replayButton() {
+        
+        if buttonIndex < 2{
+            buttonIndex += 1
+        } else {
+            buttonIndex = 0
+        }
+        if replayButtonMode != .off{
+            shuffleOn = false
+        }
+    }
+    
+    enum ReplayButtonMode {
+        case off
+        case single
+        case all
+        
+        var image: String {
+            switch self {
+            case .off: return "replay 3"
+            case .single: return "replay 1 cc"
+            case .all: return "replay 2"
+            }
+        }
+        
+        var next: ReplayButtonMode {
+            switch self {
+            case .off: return .all
+            case .all: return .single
+            case .single: return .off
+            }
+        }
+    }
+    
+    func getRandomIndex() -> Int {
+        let currentIndex = index
+       
+        let onIndices = songs.enumerated().filter { (index, song) in
+            return song.on
+        }.map { (index, _) in
+           return index
+        }
+        
+        let randomIndexOfOnIndicesArray = Int.random(in: 0...onIndices.count-1)
+        let randomIndex = onIndices[randomIndexOfOnIndicesArray]
+        if randomIndex == currentIndex && onIndices.count > 1{
+            return getRandomIndex()
+        } else {
+            return randomIndex
+        }
+    }
+    
+    
 }
