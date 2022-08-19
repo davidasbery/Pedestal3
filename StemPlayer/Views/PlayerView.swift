@@ -75,7 +75,7 @@ struct PlayerView: View {
                             .foregroundColor(.white)
                         Spacer()
                         
-                        Spacer().frame(height: 20)
+                        Spacer()
                         slider
                         .padding(.horizontal, 10)
                         .onReceive(stemPlayer.timer) { input in
@@ -92,7 +92,6 @@ struct PlayerView: View {
                 if showSheet{
                     Menu1View(stemPlayer:stemPlayer, editMode: $editMode).transition(.move(edge:.bottom))
                 }
-                    
                     VStack {
                         Spacer()
                         ZStack{
@@ -103,12 +102,9 @@ struct PlayerView: View {
                         playbackControls
                         }
                     }
-
                 }
             }
-
         }
-       
     }
     
     var slider: some View {
@@ -199,18 +195,13 @@ struct PlayerView: View {
                         }
                     }
                 
-                
                 Spacer()
                 Image("Info C")
                 Spacer()
             }
             
-
-            
         }
     }
-    
-    
     
     
     func didStartDragging(_ value: Double) {

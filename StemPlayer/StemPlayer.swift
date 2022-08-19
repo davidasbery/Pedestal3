@@ -200,9 +200,11 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     }
     
     func onToggle(song: Song) {
-        guard let songIndex = songs.firstIndex(where: { $0.id == song.id }) else { return }
-        songs[songIndex].on.toggle()
-        self.songs = songs
+        if let songIndex = disabledSongs.firstIndex(where: { $0.id == song.id }) {
+            disabledSongs.remove(at: songIndex)
+        } else {
+            disabledSongs.append(song)
+        }
     }
     
     func seek(to time: Double) {
@@ -264,7 +266,7 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         let currentIndex = index
        
         let onIndices = songs.enumerated().filter { (index, song) in
-            return song.on
+            return !disabledSongs.contains(song)
         }.map { (index, _) in
            return index
         }
@@ -277,6 +279,8 @@ class StemPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
             return randomIndex
         }
     }
+    
+   @Published var disabledSongs : [Song] = []
     
     
 }

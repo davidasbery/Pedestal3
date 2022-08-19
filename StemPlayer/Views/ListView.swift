@@ -29,7 +29,7 @@ struct ListView: View {
                             stemPlayer.onToggle(song: song )
                             
                         } label: {
-                            Image(song.on ? "toggleOff" : "toggleOn")
+                            Image(stemPlayer.disabledSongs.contains(song) ? "toggleOff" : "toggleOn")
                         }
 
                     }

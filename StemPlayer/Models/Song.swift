@@ -12,7 +12,6 @@ class Song: Identifiable, Equatable {
     let name: String
     let artistName: String
     let tracks: [Track]
-    var on = true
     
     init(name: String,
          tracks: [Track?],

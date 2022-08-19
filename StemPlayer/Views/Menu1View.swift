@@ -60,7 +60,7 @@ struct Menu1View: View {
                                 stemPlayer.onToggle(song: song )
                                 
                             } label: {
-                                Image(song.on ? "toggleOn" : "toggleOff")
+                                Image(!stemPlayer.disabledSongs.contains(song) ? "toggleOn" : "toggleOff")
                             }
 
                         }
