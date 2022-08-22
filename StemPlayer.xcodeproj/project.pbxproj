@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A90187C1289EFB5000EE99A8 /* WuTangDL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187BD289EFB5000EE99A8 /* WuTangDL.mp3 */; };
-		A90187C2289EFB5000EE99A8 /* WuTangD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187BE289EFB5000EE99A8 /* WuTangD.mp3 */; };
-		A90187C3289EFB5000EE99A8 /* WuTangM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187BF289EFB5000EE99A8 /* WuTangM.mp3 */; };
-		A90187C4289EFB5000EE99A8 /* WuTangB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187C0289EFB5000EE99A8 /* WuTangB.mp3 */; };
+		A90187C1289EFB5000EE99A8 /* PedestalDL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187BD289EFB5000EE99A8 /* PedestalDL.mp3 */; };
+		A90187C2289EFB5000EE99A8 /* PedestalD.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187BE289EFB5000EE99A8 /* PedestalD.mp3 */; };
+		A90187C3289EFB5000EE99A8 /* PedestalM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187BF289EFB5000EE99A8 /* PedestalM.mp3 */; };
+		A90187C4289EFB5000EE99A8 /* PedestalB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A90187C0289EFB5000EE99A8 /* PedestalB.mp3 */; };
 		A90187C6289F346B00EE99A8 /* Menu1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90187C5289F346B00EE99A8 /* Menu1View.swift */; };
 		A90187C8289F6A5F00EE99A8 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90187C7289F6A5F00EE99A8 /* GifImage.swift */; };
 		A90187CC289F6AC900EE99A8 /* Decrease.gif in Resources */ = {isa = PBXBuildFile; fileRef = A90187CA289F6AC900EE99A8 /* Decrease.gif */; };
@@ -29,11 +29,6 @@
 		DB246D43287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D42287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift */; };
 		DB246D45287B55C800D00B19 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D44287B55C800D00B19 /* Double+Extension.swift */; };
 		DB246D47287B55E900D00B19 /* AVAudioPlayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D46287B55E900D00B19 /* AVAudioPlayer+Extension.swift */; };
-		DB246D4D287B59AA00D00B19 /* 00_HolyHolyHoly.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */; };
-		DB246D4E287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */; };
-		DB246D4F287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */; };
-		DB246D50287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */; };
-		DB246D51287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */; };
 		DB246D53287B5BF300D00B19 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D52287B5BF300D00B19 /* ListView.swift */; };
 		DB246D58287B689400D00B19 /* Shape+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D57287B689400D00B19 /* Shape+Extension.swift */; };
 		DB246D5A287B69E100D00B19 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB246D59287B69E100D00B19 /* Color+Extension.swift */; };
@@ -46,10 +41,10 @@
 
 /* Begin PBXFileReference section */
 		A90187B4289EE6EA00EE99A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		A90187BD289EFB5000EE99A8 /* WuTangDL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WuTangDL.mp3; sourceTree = "<group>"; };
-		A90187BE289EFB5000EE99A8 /* WuTangD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WuTangD.mp3; sourceTree = "<group>"; };
-		A90187BF289EFB5000EE99A8 /* WuTangM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WuTangM.mp3; sourceTree = "<group>"; };
-		A90187C0289EFB5000EE99A8 /* WuTangB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = WuTangB.mp3; sourceTree = "<group>"; };
+		A90187BD289EFB5000EE99A8 /* PedestalDL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PedestalDL.mp3; sourceTree = "<group>"; };
+		A90187BE289EFB5000EE99A8 /* PedestalD.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PedestalD.mp3; sourceTree = "<group>"; };
+		A90187BF289EFB5000EE99A8 /* PedestalM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PedestalM.mp3; sourceTree = "<group>"; };
+		A90187C0289EFB5000EE99A8 /* PedestalB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PedestalB.mp3; sourceTree = "<group>"; };
 		A90187C5289F346B00EE99A8 /* Menu1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu1View.swift; sourceTree = "<group>"; };
 		A90187C7289F6A5F00EE99A8 /* GifImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		A90187CA289F6AC900EE99A8 /* Decrease.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Decrease.gif; sourceTree = SOURCE_ROOT; };
@@ -68,11 +63,6 @@
 		DB246D42287B556D00D00B19 /* AVAudioPlayerArray+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayerArray+Extension.swift"; sourceTree = "<group>"; };
 		DB246D44287B55C800D00B19 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		DB246D46287B55E900D00B19 /* AVAudioPlayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayer+Extension.swift"; sourceTree = "<group>"; };
-		DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 00_HolyHolyHoly.wav; path = StemPlayer/AudioFiles/00_HolyHolyHoly.wav; sourceTree = SOURCE_ROOT; };
-		DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 02_HolyHolyHolyAlto.wav; path = StemPlayer/AudioFiles/02_HolyHolyHolyAlto.wav; sourceTree = SOURCE_ROOT; };
-		DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 04_HolyHolyHolyBass.wav; path = StemPlayer/AudioFiles/04_HolyHolyHolyBass.wav; sourceTree = SOURCE_ROOT; };
-		DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 03_HolyHolyHolyTenor.wav; path = StemPlayer/AudioFiles/03_HolyHolyHolyTenor.wav; sourceTree = SOURCE_ROOT; };
-		DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 01_HolyHolyHolySoprano.wav; path = StemPlayer/AudioFiles/01_HolyHolyHolySoprano.wav; sourceTree = SOURCE_ROOT; };
 		DB246D52287B5BF300D00B19 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DB246D57287B689400D00B19 /* Shape+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shape+Extension.swift"; sourceTree = "<group>"; };
 		DB246D59287B69E100D00B19 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -188,15 +178,10 @@
 		DB246D56287B682800D00B19 /* AudioFiles */ = {
 			isa = PBXGroup;
 			children = (
-				DB246D48287B59AA00D00B19 /* 00_HolyHolyHoly.wav */,
-				DB246D4C287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav */,
-				DB246D49287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav */,
-				DB246D4B287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav */,
-				DB246D4A287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav */,
-				A90187C0289EFB5000EE99A8 /* WuTangB.mp3 */,
-				A90187BE289EFB5000EE99A8 /* WuTangD.mp3 */,
-				A90187BD289EFB5000EE99A8 /* WuTangDL.mp3 */,
-				A90187BF289EFB5000EE99A8 /* WuTangM.mp3 */,
+				A90187C0289EFB5000EE99A8 /* PedestalB.mp3 */,
+				A90187BE289EFB5000EE99A8 /* PedestalD.mp3 */,
+				A90187BD289EFB5000EE99A8 /* PedestalDL.mp3 */,
+				A90187BF289EFB5000EE99A8 /* PedestalM.mp3 */,
 			);
 			path = AudioFiles;
 			sourceTree = "<group>";
@@ -265,19 +250,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A90187C1289EFB5000EE99A8 /* WuTangDL.mp3 in Resources */,
-				A90187C2289EFB5000EE99A8 /* WuTangD.mp3 in Resources */,
-				DB246D4E287B59AA00D00B19 /* 02_HolyHolyHolyAlto.wav in Resources */,
+				A90187C1289EFB5000EE99A8 /* PedestalDL.mp3 in Resources */,
+				A90187C2289EFB5000EE99A8 /* PedestalD.mp3 in Resources */,
 				A90187CD289F6AC900EE99A8 /* Jumping.gif in Resources */,
 				DB136D972879D58400C4F636 /* Preview Assets.xcassets in Resources */,
 				A90187CC289F6AC900EE99A8 /* Decrease.gif in Resources */,
-				A90187C3289EFB5000EE99A8 /* WuTangM.mp3 in Resources */,
-				DB246D4F287B59AA00D00B19 /* 04_HolyHolyHolyBass.wav in Resources */,
-				DB246D51287B59AA00D00B19 /* 01_HolyHolyHolySoprano.wav in Resources */,
+				A90187C3289EFB5000EE99A8 /* PedestalM.mp3 in Resources */,
 				DB136D942879D58400C4F636 /* Assets.xcassets in Resources */,
-				DB246D50287B59AA00D00B19 /* 03_HolyHolyHolyTenor.wav in Resources */,
-				DB246D4D287B59AA00D00B19 /* 00_HolyHolyHoly.wav in Resources */,
-				A90187C4289EFB5000EE99A8 /* WuTangB.mp3 in Resources */,
+				A90187C4289EFB5000EE99A8 /* PedestalB.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

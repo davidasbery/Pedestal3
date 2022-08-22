@@ -45,7 +45,7 @@ struct DockView: View {
 
 struct DockView_Previews: PreviewProvider {
     static var previews: some View {
-        DockView(stemPlayer: StemPlayer(songs: []), dockIndex: .constant(1), blurRadius: .constant(0))
+        DockView(stemPlayer: StemPlayer(songs: []), dockIndex: .constant(0), blurRadius: .constant(0))
         
         
         

@@ -26,14 +26,14 @@ struct PlayerView: View {
     var screen = UIScreen.main.bounds
     let gradient = Gradient(colors: [.clear, .black])
 
-    @State var dockIndex: Int = 1
+    @State var dockIndex: Int = 0
     @State var blurRadius: CGFloat = 0
     @State var editMode: EditMode = .inactive
 
 
     init() {
         self._stemPlayer = StateObject(wrappedValue: StemPlayer(songs: Songs.all))
-    }
+    }#imageLiteral(resourceName: "simulator_screenshot_F873C6FC-2C03-4C9F-ABEA-67EABA1C996F.png")
     
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     

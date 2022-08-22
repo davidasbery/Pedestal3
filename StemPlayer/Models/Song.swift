@@ -31,30 +31,20 @@ struct Songs {
     static var all: [Song] {
         return [
             
-            Song(name: "WuTang 1",
+            Song(name: "Pedestal 4",
                 tracks: [
-                    Track(fileName: "WuTangM", padType: .melody)
+                    Track(fileName: "PedestalB", padType: .bass),
+                    Track(fileName: "PedestalD", padType: .drum),
+                    Track(fileName: "PedestalM", padType: .melody),
+                    Track(fileName: "PedestalDL", padType: .loop)
+
                 ]
             ),
-            Song(name: "WuTang 2",
+            Song(name: "Pedestal 3",
                 tracks: [
-                    Track(fileName: "WuTangB", padType: .bass),
-                    Track(fileName: "WuTangM", padType: .melody)
-                ]
-            ),
-            Song(name: "WuTang 3",
-                tracks: [
-                    Track(fileName: "WuTangB", padType: .bass),
-                    Track(fileName: "WuTangD", padType: .drum),
-                    Track(fileName: "WuTangM", padType: .melody)
-                ]
-            ),
-            Song(name: "WuTang 4",
-                tracks: [
-                    Track(fileName: "WuTangB", padType: .bass),
-                    Track(fileName: "WuTangD", padType: .drum),
-                    Track(fileName: "WuTangM", padType: .melody),
-                    Track(fileName: "WuTangDL", padType: .loop)
+                    Track(fileName: "PedestalB", padType: .bass),
+                    Track(fileName: "PedestalD", padType: .drum),
+                    Track(fileName: "PedestalM", padType: .melody)
                 ]
             
             )
