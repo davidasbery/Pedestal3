@@ -33,7 +33,7 @@ struct PlayerView: View {
 
     init() {
         self._stemPlayer = StateObject(wrappedValue: StemPlayer(songs: Songs.all))
-    }#imageLiteral(resourceName: "simulator_screenshot_F873C6FC-2C03-4C9F-ABEA-67EABA1C996F.png")
+    }
     
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
